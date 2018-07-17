@@ -1,0 +1,76 @@
+//fonts
+@import url(https://fonts.googleapis.com/css?family=Galada|Shrikhand|Noto+Serif)
+
+//colors
+$champagne: #F7E7CA
+$quicksand: #B4948B
+$darkSand: #83625A
+$darkChamp: #D7C29F
+$lightChamp: #FEF7E7
+
+body
+  background: $champagne
+h1
+  color: $quicksand
+  font: 50px Shrikhand
+  margin: auto
+  text-align: center
+article
+  position: relative
+  background: $darkSand
+  height: 600px
+  max-width: 900px
+  min-height: 600px
+  min-width: 700px
+  margin: auto
+  h2
+    color: $champagne
+    text-align: center
+    font-size: 36px 
+    font-style: italic
+  section
+    width: 95%
+    margin: auto
+    label
+      color: $champagne
+      font-size: 20px 
+      font-style: italic
+    select 
+      background: $champagne
+      outline-color: $lightChamp
+      border: none
+      color: $darkSand
+    input 
+      @extend select
+      float: right
+  table 
+    width: 95%
+    margin: 10px auto
+    border-color: $darkChamp
+    text-align: left
+    tr
+      height: 40px
+      color: $champagne
+      th
+        color: $champagne
+  ul
+    position: absolute
+    bottom: 0
+    left: -20px
+    list-style-type: none
+    li
+      display: inline-block
+      height: 30px
+      width: 30px
+      background: $champagne
+      text-align: center
+      margin: 0 5px
+      font-size: 20px
+      overflow: hidden
+      a 
+        padding: 10px
+        outline: none
+        color: $darkSand
+        text-decoration: none
+.active
+  background: $darkChamp
