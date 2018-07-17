@@ -1,0 +1,37 @@
+!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.0/angular.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+   <h1>Angular Pagination</h1>
+<main ng-app="MyApp" ng-controller="myCtrl">
+  <article>
+    <h2>Twitch Streams</h2>
+    <section>
+      <label for="games">Select a game: </label>
+      <select id="games" ng-model="selectGame">
+        <option ng-repeat="x in games">{{x}}</option>
+      </select>
+      <input ng-model="search" placeholder="Search in Twitch Streams"/>
+    </section>
+    <table rules="rows"> 
+      <tr id="head">
+        <th>Game</th>
+        <th>Viewers</th>
+        <th>Stream type</th>
+      </tr>
+      <tr dir-paginate="x in results | filter: selectGame | filter: search | itemsPerPage: pageSize" current-page="currentPage">
+        <td id="game">{{x.game}} </td>
+        <td id="viewer">{{x.viewers}}</td>
+        <td id="stream_type">{{x.stream_type}}</td>
+      </tr>
+    </table>
+    <dir-pagination-controls direction-links="false" max-size="7"></dir-pagination-controls>
+  </article>
+</main>
+  </body>
+</html>
