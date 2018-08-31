@@ -1,12 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Galada|Shrikhand|Noto+Serif);
 body {
-  background: #F7E7CA; }
+  background: #F7E7CA;
+}
 
 h1 {
   color: #B4948B;
   font: 50px Shrikhand;
   margin: auto;
-  text-align: center; }
+  text-align: center;
+}
 
 article {
   position: relative;
@@ -15,57 +17,72 @@ article {
   max-width: 900px;
   min-height: 600px;
   min-width: 700px;
-  margin: auto; }
-  article h2 {
-    color: #F7E7CA;
-    text-align: center;
-    font-size: 36px;
-    font-style: italic; }
-  article section {
-    width: 95%;
-    margin: auto; }
-    article section label {
-      color: #F7E7CA;
-      font-size: 20px;
-      font-style: italic; }
-    article section select, article section input {
-      background: #F7E7CA;
-      outline-color: #FEF7E7;
-      border: none;
-      color: #83625A; }
-    article section input {
-      float: right; }
-  article table {
-    width: 95%;
-    margin: 10px auto;
-    border-color: #D7C29F;
-    text-align: left; }
-    article table tr {
-      height: 40px;
-      color: #F7E7CA; }
-      article table tr th {
-        color: #F7E7CA; }
-  article ul {
-    position: absolute;
-    bottom: 0;
-    left: -20px;
-    list-style-type: none; }
-    article ul li {
-      display: inline-block;
-      height: 30px;
-      width: 30px;
-      background: #F7E7CA;
-      text-align: center;
-      margin: 0 5px;
-      font-size: 20px;
-      overflow: hidden; }
-      article ul li a {
-        padding: 10px;
-        outline: none;
-        color: #83625A;
-        text-decoration: none; }
+  margin: auto;
+}
+article h2 {
+  color: #F7E7CA;
+  text-align: center;
+  font-size: 36px;
+  font-style: italic;
+}
+article section {
+  width: 95%;
+  margin: auto;
+}
+article section label {
+  color: #F7E7CA;
+  font-size: 20px;
+  font-style: italic;
+}
+article section select, article section input {
+  background: #F7E7CA;
+  outline-color: #FEF7E7;
+  border: none;
+  color: #83625A;
+}
+article section input {
+  float: right;
+}
+article table {
+  width: 95%;
+  margin: 10px auto;
+  text-align: left;
+}
+article table tr {
+  height: 40px;
+  color: #F7E7CA;
+}
+article table tr th {
+  text-align: left;
+  color: #F7E7CA;
+}
+article ul {
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  list-style-type: none;
+}
+article ul li {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background: #F7E7CA;
+  text-align: center;
+  margin: 0 5px;
+  font-size: 20px;
+  overflow: hidden;
+}
+article ul li a {
+  padding-top: 3px;
+  outline: none;
+  display: block;
+  cursor: pointer;
+  height: inherit;
+  width: inherit;
+  color: #83625A;
+  text-decoration: none;
+}
 
 .active {
-  background: #D7C29F; }
-
-/*# sourceMappingURL=style.css.map */
+  background: #D7C29F;
+}

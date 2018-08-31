@@ -46,12 +46,13 @@ article
   table 
     width: 95%
     margin: 10px auto
-    border-color: $darkChamp
+    //border-color: $darkChamp
     text-align: left
     tr
       height: 40px
       color: $champagne
       th
+        text-align: left //for IE
         color: $champagne
   ul
     position: absolute
@@ -68,8 +69,12 @@ article
       font-size: 20px
       overflow: hidden
       a 
-        padding: 10px
+        padding-top: 3px
         outline: none
+        display: block
+        cursor: pointer
+        height: inherit
+        width:  inherit
         color: $darkSand
         text-decoration: none
 .active
